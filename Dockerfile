@@ -1,0 +1,24 @@
+FROM debian:jessie
+
+USER root
+
+#labeling
+LABEL maintainer="netiotedge@hilscher.com" \ 
+      version="V1.0.0.0" \
+      description="Desktop (DVI) for NIOT-E-TIJCX-GB-RE"
+
+#version
+ENV HILSCHERNETIOTEDGE_DESKTOP_VERSION 1.0.0.0
+
+#install xserver, desktop and login manager
+RUN apt-get update \
+    && apt-get install --no-install-recommends xserver-xorg \
+    && apt-get install --no-install-recommends xinit \
+    && apt-get install xfce4 xfce4-terminal \
+    && mkdir /etc/X11/xorg.conf.d 
+    
+#install mouse support configuration file    
+COPY "./files-to-copy-to-image/10-input.conf" "/etc/X11/xorg.conf.d"
+
+#set the entrypoint
+ENTRYPOINT ["startx"]
