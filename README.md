@@ -53,7 +53,7 @@ STEP 3. Enter the following parameters under **Containers > Add Container**
 STEP 4. Press the button **Actions > Start container**
 
 ### GitHub sources
-The image is built from the GitHub project [netPI-nodered-fieldbus](https://github.com/hilschernetiotedge/netIOT-Edge-desktop-dvi). It complies with the [Dockerfile](https://docs.docker.com/engine/reference/builder/) method to build a Docker image [automated](https://docs.docker.com/docker-hub/builds/). 
+The image is built from the GitHub project [netIOT-Edge-desktop-dvi](https://github.com/hilschernetiotedge/netIOT-Edge-desktop-dvi). It complies with the [Dockerfile](https://docs.docker.com/engine/reference/builder/) method to build a Docker image [automated](https://docs.docker.com/docker-hub/builds/). 
 
 
 ### References:
