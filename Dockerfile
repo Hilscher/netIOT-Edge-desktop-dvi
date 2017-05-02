@@ -22,4 +22,4 @@ COPY "./files-to-copy-to-image/10-input.conf" "/etc/X11/xorg.conf.d"
 COPY "./files-to-copy-to-image/event.sh" "/home"
 
 #set the entrypoint
-ENTRYPOINT ["/home/event.sh"]
+ENTRYPOINT ["/bin/bash /home/event.sh"]
