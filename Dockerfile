@@ -19,7 +19,9 @@ RUN apt-get update \
     
 #install mouse support configuration file    
 COPY "./files-to-copy-to-image/10-input.conf" "/etc/X11/xorg.conf.d"
-COPY "./files-to-copy-to-image/event.sh" "/home"
+COPY "./files-to-copy-to-image/event.sh" "/"
+
+RUN ["chmod", "+x", "/event.sh"]
 
 #set the entrypoint
-ENTRYPOINT ["/bin/bash /home/event.sh"]
+ENTRYPOINT ["/event.sh"]
