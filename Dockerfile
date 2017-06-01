@@ -4,11 +4,11 @@ USER root
 
 #labeling
 LABEL maintainer="netiotedge@hilscher.com" \ 
-      version="V1.0.0.1" \
+      version="V1.0.0.2" \
       description="Desktop (DVI) for NIOT-E-TIJCX-GB-RE"
 
 #version
-ENV HILSCHERNETIOTEDGE_DESKTOP_VERSION 1.0.0.1
+ENV HILSCHERNETIOTEDGE_DESKTOP_VERSION 1.0.0.2
 
 #install xserver, desktop and login manager
 RUN apt-get update \
@@ -21,7 +21,7 @@ RUN apt-get update \
 COPY "./files-to-copy-to-image/10-input.conf" "/etc/X11/xorg.conf.d"
 COPY "./files-to-copy-to-image/event.sh" "/"
 
-RUN ["chmod", "+x", "/event.sh"]
+RUN chmod +x /event.sh
 
 #set the entrypoint
 ENTRYPOINT ["/event.sh"]
