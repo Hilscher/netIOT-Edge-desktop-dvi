@@ -1,9 +1,9 @@
-## NIOT-E-TIJCX-GB-RE
-### netIOT Edge gateway for Automation networks as Docker host
+## NIOT-E-TIJCX-GB-xx
+### netIOT Edge - Edge to Enterprise gateways for Automation networks as Docker hosts
 
-netIOT Edge devices from Hilscher securely connect automation networks with cloud or IoT directed application. On the OT network side they are in cyclic I/O data exchange with a PLC while communicating with IoT-capable field devices directly at the same time over IOT protocols such as MQTT or OPC UA. On the IT network side they exchange those key field data with intelligent higher-level applications of cyber-physical systems and M2M solutions.
+Hilscher's netIOT Edge devices securely connect OT automation networks such as PROFINET or Ethernet/IP with cloud or IoT directed applications. On the OT network side they are in cyclic I/O data exchange with a PLC while communicating with IoT-capable field devices at the same time directly over IOT protocols such as MQTT or OPC UA. On the IT network side they exchange those key field data with intelligent higher-level applications of cyber-physical systems and M2M solutions.
 
-The Edge Gateway NIOT-E-TIJCX-GB-RE comes with support out of the box for using Docker as a host. This feature enables gateway users to expand the range of default functions with their own dockerized applications. 
+The Edge Gateways of type NIOT-E-TIJCX-GB-xx come with support out of the box for using Docker as a host. This feature enables gateway users to expand the range of default functions with their own dockerized applications. 
 
 ### The image
 
